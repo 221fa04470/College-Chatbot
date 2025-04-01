@@ -1,0 +1,125 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center the chatbot */
+body {
+    background: #fffae6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Chatbot container */
+.container {
+    background: linear-gradient(145deg, #6a94ff, #4b72d1);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    background-color: #3e6be5;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Chat container */
+.chat-container {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message bubbles */
+.message {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 25px;
+    line-height: 1.5;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.chatbot-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    color: #3d3d3d;
+    border-radius: 25px 25px 0 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-message {
+    background-color: #5c8fff;
+    color: white;
+    align-self: flex-end;
+    border-radius: 25px 25px 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #fff;
+    border-top: 3px solid #e0aaff;
+}
+
+/* Input field */
+#user-input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+#user-input:focus {
+    border-color: #5c8fff;
+    background-color: #e7f2ff;
+}
+
+/* Send button */
+.send-button {
+    background-color: #5c8fff;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #3e6be5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
